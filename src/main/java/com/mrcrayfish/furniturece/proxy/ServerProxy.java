@@ -3,17 +3,11 @@ package com.mrcrayfish.furniturece.proxy;
 public class ServerProxy implements IFurnitureProxy 
 {
 	@Override
-	public void preInit() {
-		
-	}
+	public void preInit() {}
 
 	@Override
-	public void init() {
-		
-	}
+	public void init() {}
 
 	@Override
-	public void postInit() {
-		
-	}
+	public void postInit() {}
 }

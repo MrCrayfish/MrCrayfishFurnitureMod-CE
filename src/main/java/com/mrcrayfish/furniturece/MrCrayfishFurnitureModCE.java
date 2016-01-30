@@ -1,7 +1,6 @@
 package com.mrcrayfish.furniturece;
 
 import com.mrcrayfish.furniturece.block.FurnitureBlocks;
-import com.mrcrayfish.furniturece.item.FurnitureItems;
 import com.mrcrayfish.furniturece.proxy.IFurnitureProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,8 +13,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
-public class MrCrayfishFurnitureModCE {
-	
+public class MrCrayfishFurnitureModCE 
+{	
 	@Instance(Reference.MOD_ID)
 	public static MrCrayfishFurnitureModCE instance;
 	
@@ -25,11 +24,8 @@ public class MrCrayfishFurnitureModCE {
 	public static CreativeTabs tabFurniture = new FurnitureTab("tabFurnitureCE");
 	
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
-		/** Item Registering */
-		FurnitureItems.init();
-		FurnitureItems.register();
-		
+	public void preInit(FMLPreInitializationEvent event) 
+	{
 		/** Block Registering */
 		FurnitureBlocks.init();
 		FurnitureBlocks.register();
@@ -39,13 +35,15 @@ public class MrCrayfishFurnitureModCE {
 	}
 
 	@EventHandler
-	public void init(FMLInitializationEvent event) {
+	public void init(FMLInitializationEvent event) 
+	{
 		/** Initialize Proxies */
 		proxy.init();
 	}
 	
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
+	public void postInit(FMLPostInitializationEvent event) 
+	{
 		/** Post-Initialize Proxies */
 		proxy.postInit();
 	}

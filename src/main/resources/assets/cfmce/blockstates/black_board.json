@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:black_board", "y": 180 },
+		"facing=south": { "model": "cfmce:black_board"           },
+		"facing=east":  { "model": "cfmce:black_board", "y": 90  },
+		"facing=west":  { "model": "cfmce:black_board", "y": 270 }
+	}
+}

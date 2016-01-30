@@ -1,19 +1,18 @@
 package com.mrcrayfish.furniturece.proxy;
 
+import com.mrcrayfish.furniturece.block.FurnitureBlocks;
+
 public class ClientProxy implements IFurnitureProxy 
 {
 	@Override
-	public void preInit() {
+	public void preInit() {}
 
+	@Override
+	public void init() 
+	{
+		FurnitureBlocks.registerRenders();
 	}
 
 	@Override
-	public void init() {
-
-	}
-
-	@Override
-	public void postInit() {
-
-	}
+	public void postInit() {}
 }
