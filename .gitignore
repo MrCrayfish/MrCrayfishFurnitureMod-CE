@@ -31,3 +31,5 @@ gradle/
 models/
 
 1\.8/
+*.gradle
+*.bat
