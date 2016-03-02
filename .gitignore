@@ -28,7 +28,7 @@ gradle/wrapper/gradle-wrapper.properties
 gradlew
 .gradle
 gradle/
-models/
+models/basics/
 
 1\.8/
 *.gradle

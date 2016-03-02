@@ -83,7 +83,7 @@ public class BlockAquarium extends Block implements ITileEntityProvider, IModelI
 	@Override
 	public EnumWorldBlockLayer getBlockLayer() 
 	{
-		return EnumWorldBlockLayer.CUTOUT;
+		return EnumWorldBlockLayer.TRANSLUCENT;
 	}
 
 	@Override
