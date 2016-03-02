@@ -2,11 +2,14 @@ package com.mrcrayfish.furniturece.block;
 
 import java.util.List;
 
+import com.mrcrayfish.furniturece.MrCrayfishFurnitureModCE;
 import com.mrcrayfish.furniturece.Reference;
+import com.mrcrayfish.furniturece.gui.GuiBlackBoard;
+import com.mrcrayfish.furniturece.tileentity.TileEntityBlackBoard;
 import com.mrcrayfish.furniturece.util.CollisionHelper;
 
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
@@ -14,6 +17,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.ChatComponentText;
@@ -21,10 +25,8 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockBlackBoard extends BlockFurniture
+public class BlockBlackBoard extends BlockFurniture implements ITileEntityProvider
 {
 	public static final PropertyBool LEFT = PropertyBool.create("left");
 	public static final PropertyBool RIGHT = PropertyBool.create("right");
@@ -40,13 +42,16 @@ public class BlockBlackBoard extends BlockFurniture
 	}
 	
 	@Override
-	@SideOnly(Side.CLIENT)
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
 	{
-		if(!placed && placer instanceof EntityPlayer)
+		if(placer instanceof EntityPlayer)
 		{
-			placer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "TIP: " + EnumChatFormatting.YELLOW + "Place blackboards to the left and right to extend it."));
-			placed = true;
+			if(worldIn.isRemote && placed)
+			{
+				placer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "TIP: " + EnumChatFormatting.YELLOW + "Place blackboards to the left and right to extend it."));
+				placed = true;
+			}
+			((EntityPlayer) placer).openGui(MrCrayfishFurnitureModCE.instance, GuiBlackBoard.ID, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 	}
 	
@@ -77,6 +82,13 @@ public class BlockBlackBoard extends BlockFurniture
 		boolean left = leftState.getBlock() == this && leftState.getValue(FACING).equals(facing);
 		boolean right = rightState.getBlock() == this && rightState.getValue(FACING).equals(facing);;
 		return state.withProperty(LEFT, Boolean.valueOf(left)).withProperty(RIGHT, Boolean.valueOf(right));
+	}
+	
+
+	@Override
+	public TileEntity createNewTileEntity(World worldIn, int meta) 
+	{
+		return new TileEntityBlackBoard();
 	}
 	
 	@Override

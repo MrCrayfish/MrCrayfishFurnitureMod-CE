@@ -22,7 +22,11 @@ public class GuiHandler implements IGuiHandler
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
 	{
-		if(ID == GuiModelInfo.ID)
+		if(ID == GuiBlackBoard.ID)
+		{
+			return new GuiBlackBoard(x, y, z);
+		}
+		else if(ID == GuiModelInfo.ID)
 		{
 			Block block = world.getBlockState(new BlockPos(x, y, z)).getBlock();
 			if(block instanceof IModelInfo)
