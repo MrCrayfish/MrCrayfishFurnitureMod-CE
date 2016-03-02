@@ -72,8 +72,10 @@ public class BlockBlackBoard extends BlockFurniture
 	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) 
 	{
 		EnumFacing facing = (EnumFacing) state.getValue(FACING);
-		boolean left = worldIn.getBlockState(pos.offset(facing.rotateYCCW())).getBlock() == this;
-		boolean right = worldIn.getBlockState(pos.offset(facing.rotateY())).getBlock() == this;
+		IBlockState leftState = worldIn.getBlockState(pos.offset(facing.rotateYCCW()));
+		IBlockState rightState = worldIn.getBlockState(pos.offset(facing.rotateY()));
+		boolean left = leftState.getBlock() == this && leftState.getValue(FACING).equals(facing);
+		boolean right = rightState.getBlock() == this && rightState.getValue(FACING).equals(facing);;
 		return state.withProperty(LEFT, Boolean.valueOf(left)).withProperty(RIGHT, Boolean.valueOf(right));
 	}
 	
