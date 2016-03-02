@@ -11,6 +11,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -62,6 +63,24 @@ public class BlockCanvas extends BlockFurniture implements ITileEntityProvider
 			placer.addChatMessage(new ChatComponentText(EnumChatFormatting.GRAY + "TIP: " + EnumChatFormatting.YELLOW + "Place a painting on the canvas to view it in style!"));
 			placed = true;
 		}
+	}
+	
+	@Override
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
+	{
+		if(!worldIn.isRemote)
+		{
+			TileEntity tileEntity = worldIn.getTileEntity(pos);
+			if(tileEntity instanceof TileEntityCanvas)
+			{
+				TileEntityCanvas canvas = (TileEntityCanvas) tileEntity;
+				if(canvas.hasArt)
+				{
+					worldIn.spawnEntityInWorld(new EntityItem(worldIn, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, new ItemStack(Items.painting)));
+				}
+			}
+		}
+		super.breakBlock(worldIn, pos, state);
 	}
 	
 	@Override
