@@ -1,0 +1,23 @@
+{
+	"variants": {
+		"facing=north,left=false,right=false": { "model": "cfmce:black_board"           },
+		"facing=south,left=false,right=false": { "model": "cfmce:black_board", "y": 180 },
+		"facing=east,left=false,right=false":  { "model": "cfmce:black_board", "y": 90  },
+		"facing=west,left=false,right=false":  { "model": "cfmce:black_board", "y": 270 },
+		
+		"facing=north,left=true,right=false": { "model": "cfmce:black_board_right"           },
+		"facing=south,left=true,right=false": { "model": "cfmce:black_board_right", "y": 180 },
+		"facing=east,left=true,right=false":  { "model": "cfmce:black_board_right", "y": 90  },
+		"facing=west,left=true,right=false":  { "model": "cfmce:black_board_right", "y": 270 },
+		
+		"facing=north,left=false,right=true": { "model": "cfmce:black_board_left"           },
+		"facing=south,left=false,right=true": { "model": "cfmce:black_board_left", "y": 180 },
+		"facing=east,left=false,right=true":  { "model": "cfmce:black_board_left", "y": 90  },
+		"facing=west,left=false,right=true":  { "model": "cfmce:black_board_left", "y": 270 },
+		
+		"facing=north,left=true,right=true": { "model": "cfmce:black_board_center"           },
+		"facing=south,left=true,right=true": { "model": "cfmce:black_board_center", "y": 180 },
+		"facing=east,left=true,right=true":  { "model": "cfmce:black_board_center", "y": 90  },
+		"facing=west,left=true,right=true":  { "model": "cfmce:black_board_center", "y": 270 }
+	}
+}

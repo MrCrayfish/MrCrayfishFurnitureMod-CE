@@ -1,0 +1,14 @@
+{
+  "modListVersion": 2,
+  "modList": [{
+    "modid": "cfmce",
+    "name": "MrCrayfish's Furniture Mod: Community Edition",
+    "description": "A community based mod where models are designed by the community.",
+    "version": "1.0",
+    "mcversion": "1.8.9",
+    "url": "https://mrcrayfish.com/furniture-comm-edition",
+    "updateUrl": "",
+    "authorList": [ "MrCrayfish" ],
+	"credits": "The Community for their amazing talents!"
+  }]
+}

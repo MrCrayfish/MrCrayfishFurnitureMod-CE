@@ -20,14 +20,3 @@ build
 # other
 eclipse
 run
-
-
-*.txt
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
-gradlew
-.gradle
-gradle/
-models/
-
-1\.8/

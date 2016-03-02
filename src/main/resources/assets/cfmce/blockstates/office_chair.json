@@ -1,8 +1,0 @@
-{
-	"variants": {
-		"facing=north": { "model": "cfmce:office_chair", "y": 180 },
-		"facing=south": { "model": "cfmce:office_chair"           },
-		"facing=east":  { "model": "cfmce:office_chair", "y": 90  },
-		"facing=west":  { "model": "cfmce:office_chair", "y": 270 }
-	}
-}
