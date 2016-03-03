@@ -18,7 +18,7 @@ public class GuiBlockBoardTextField extends GuiTextField
 	@Override
 	public void writeText(String s)
 	{
-		if(Minecraft.getMinecraft().getRenderManager().getFontRenderer().listFormattedStringToWidth(getText() + s, MAX_WIDTH).size() <= 4)
+		if(Minecraft.getMinecraft().getRenderManager().getFontRenderer().listFormattedStringToWidth(getText() + s, MAX_WIDTH).size() <= MAX_LINES)
 		{
 			super.writeText(s);
 		}

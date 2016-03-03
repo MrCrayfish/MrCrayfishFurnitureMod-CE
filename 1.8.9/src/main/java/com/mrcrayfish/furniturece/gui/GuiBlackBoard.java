@@ -32,9 +32,9 @@ public class GuiBlackBoard extends GuiScreen
 	public void initGui()
     {
         Keyboard.enableRepeatEvents(true);
-        messageTextField = new GuiBlockBoardTextField(2, fontRendererObj, this.width / 2 - 150, this.height / 2 - 20, 300, 20, 50, 4);
+        messageTextField = new GuiBlockBoardTextField(2, fontRendererObj, this.width / 2 - 150, this.height / 2 - 20, 300, 20, 50, 5);
         messageTextField.setFocused(true);
-        messageTextField.setMaxStringLength(100);
+        messageTextField.setMaxStringLength(200);
         doneBtn = new GuiButton(0, this.width / 2 - 4 - 150, this.height / 4 + 120 + 12, 150, 20, I18n.format("gui.done", new Object[0]));
         cancelBtn = new GuiButton(1, this.width / 2 + 4, this.height / 4 + 120 + 12, 150, 20, I18n.format("gui.cancel", new Object[0]));
         buttonList.add(doneBtn);

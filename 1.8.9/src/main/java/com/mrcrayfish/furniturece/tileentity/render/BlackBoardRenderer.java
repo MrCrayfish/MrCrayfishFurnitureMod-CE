@@ -54,7 +54,7 @@ public class BlackBoardRenderer extends TileEntitySpecialRenderer<TileEntityBlac
 	private void renderSplitStringCentered(FontRenderer renderer, String str, int x, int y, int wrapWidth, int textColor)
 	{
 		List<String> lines = renderer.listFormattedStringToWidth(str, wrapWidth);
-		for (int i = 0; i < lines.size() && i < 4; i++)
+		for (int i = 0; i < lines.size() && i < 5; i++)
 		{
 			String line = lines.get(i);
 			x = (wrapWidth + -renderer.getStringWidth(line)) / 2;
