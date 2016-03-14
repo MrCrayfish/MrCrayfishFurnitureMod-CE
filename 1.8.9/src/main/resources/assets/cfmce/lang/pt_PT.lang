@@ -1,0 +1,27 @@
+itemGroup.tabFurnitureCE=MrCrayfish's Furniture Mod: CE
+
+tile.aquarium.name=Aquário
+tile.canvas.name=Tela
+tile.chimney.name=Chaminé
+tile.spiral_stairs.name=Escadas em Espiral
+tile.bear_rug.name=Tapete de Urso
+tile.black_board.name=Quadro de Lousa
+tile.office_chair.name=Cadeira de Escritório
+tile.green_wheelie_bin.name=Caixote do Lixo Verde com Rodas
+tile.coffee_table.name=Mesa de Café
+tile.bottle.name=Garrafa
+
+item.item_info_pencil.name=Lápis Informativo
+
+achievement.cfmce_apprentice=Aprendiz de Carpinteiro
+achievement.cfmce_apprentice.desc=Constrói uma peça de mobília
+achievement.cfmce_king=Mestre Carpinteiro
+achievement.cfmce_king.desc=Constrói 10 peças únicas de mobília numa seção
+achievement.cfmce_easter_egg_1=Devias ter Vergonha
+achievement.cfmce_easter_egg_1.desc=Easter Egg #1
+achievement.cfmce_easter_egg_2=Oops
+achievement.cfmce_easter_egg_2.desc=Easter Egg #2
+achievement.cfmce_easter_egg_3=Comida Errada
+achievement.cfmce_easter_egg_3.desc=Easter Egg #3
+achievement.cfmce_easter_egg_4=Fantástico, Agora isto é Inútil
+achievement.cfmce_easter_egg_4.desc=Easter Egg #4
