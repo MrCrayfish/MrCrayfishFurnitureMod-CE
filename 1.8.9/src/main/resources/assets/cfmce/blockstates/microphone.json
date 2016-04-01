@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:microphone"           },
+		"facing=south": { "model": "cfmce:microphone", "y": 180 },
+		"facing=east":  { "model": "cfmce:microphone", "y": 90  },
+		"facing=west":  { "model": "cfmce:microphone", "y": 270 }
+	}
+}

@@ -10,4 +10,5 @@ public class Reference
 	public static final String WORKING_MC_VERSION = "[1.8.9]";
 	
 	public static final String THEME_BASIC = "Basics";
+	public static final String THEME_OFFICE = "Office";
 }

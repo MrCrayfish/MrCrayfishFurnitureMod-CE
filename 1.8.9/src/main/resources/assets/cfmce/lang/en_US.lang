@@ -10,6 +10,16 @@ tile.office_chair.name=Office Chair
 tile.green_wheelie_bin.name=Green Wheelie Bin
 tile.coffee_table.name=Coffee Table
 tile.bottle.name=Bottle
+tile.cooler.name=Water Cooler
+tile.book_stack.name=Book Stack
+tile.ceiling_fan.name=Ceiling Fan
+tile.book_shelf.name=Book Shelf
+tile.microphone.name=Microphone
+tile.air_vent.name=Air Vent
+tile.coffee_machine.name=Coffee Machine
+tile.three_dimension_printer.name=3D Printer
+tile.bobble_head.name=Bobble Head
+tile.cork_board.name=Cork Board
 
 item.item_info_pencil.name=Info Pencil
 

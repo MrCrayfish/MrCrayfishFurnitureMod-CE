@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:book_shelf"           },
+		"facing=south": { "model": "cfmce:book_shelf", "y": 180 },
+		"facing=east":  { "model": "cfmce:book_shelf", "y": 90  },
+		"facing=west":  { "model": "cfmce:book_shelf", "y": 270 }
+	}
+}

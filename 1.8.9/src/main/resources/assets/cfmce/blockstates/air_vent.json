@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:air_vent"           },
+		"facing=south": { "model": "cfmce:air_vent", "y": 180 },
+		"facing=east":  { "model": "cfmce:air_vent", "y": 90  },
+		"facing=west":  { "model": "cfmce:air_vent", "y": 270 }
+	}
+}

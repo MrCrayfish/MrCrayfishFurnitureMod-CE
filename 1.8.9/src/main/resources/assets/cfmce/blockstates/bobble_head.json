@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:bobble_head"           },
+		"facing=south": { "model": "cfmce:bobble_head", "y": 180 },
+		"facing=east":  { "model": "cfmce:bobble_head", "y": 90  },
+		"facing=west":  { "model": "cfmce:bobble_head", "y": 270 }
+	}
+}
