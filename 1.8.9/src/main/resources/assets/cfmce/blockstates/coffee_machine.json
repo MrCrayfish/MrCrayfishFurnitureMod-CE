@@ -1,8 +1,8 @@
 {
 	"variants": {
-		"facing=north": { "model": "cfmce:coffee_machine"           },
-		"facing=south": { "model": "cfmce:coffee_machine", "y": 180 },
-		"facing=east":  { "model": "cfmce:coffee_machine", "y": 90  },
-		"facing=west":  { "model": "cfmce:coffee_machine", "y": 270 }
+		"facing=north": { "model": "cfmce:coffee_machine", "y": 90  },
+		"facing=south": { "model": "cfmce:coffee_machine", "y": 270 },
+		"facing=east":  { "model": "cfmce:coffee_machine", "y": 180 },
+		"facing=west":  { "model": "cfmce:coffee_machine"           }
 	}
 }

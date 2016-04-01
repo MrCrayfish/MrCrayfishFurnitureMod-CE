@@ -1,8 +1,8 @@
 {
 	"variants": {
-		"facing=north": { "model": "cfmce:three_dimension_printer"           },
-		"facing=south": { "model": "cfmce:three_dimension_printer", "y": 180 },
-		"facing=east":  { "model": "cfmce:three_dimension_printer", "y": 90  },
-		"facing=west":  { "model": "cfmce:three_dimension_printer", "y": 270 }
+		"facing=north": { "model": "cfmce:three_dimension_printer", "y": 180 },
+		"facing=south": { "model": "cfmce:three_dimension_printer"           },
+		"facing=east":  { "model": "cfmce:three_dimension_printer", "y": 270 },
+		"facing=west":  { "model": "cfmce:three_dimension_printer", "y": 90  }
 	}
 }
