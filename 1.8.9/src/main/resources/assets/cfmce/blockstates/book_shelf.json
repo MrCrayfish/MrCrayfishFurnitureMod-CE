@@ -1,8 +1,28 @@
 {
 	"variants": {
-		"facing=north": { "model": "cfmce:book_shelf"           },
-		"facing=south": { "model": "cfmce:book_shelf", "y": 180 },
-		"facing=east":  { "model": "cfmce:book_shelf", "y": 90  },
-		"facing=west":  { "model": "cfmce:book_shelf", "y": 270 }
+		"books=0,facing=north": { "model": "cfmce:book_shelf_0"           },
+		"books=0,facing=south": { "model": "cfmce:book_shelf_0", "y": 180 },
+		"books=0,facing=east":  { "model": "cfmce:book_shelf_0", "y": 90  },
+		"books=0,facing=west":  { "model": "cfmce:book_shelf_0", "y": 270 },
+		"books=1,facing=north": { "model": "cfmce:book_shelf_1"           },
+		"books=1,facing=south": { "model": "cfmce:book_shelf_1", "y": 180 },
+		"books=1,facing=east":  { "model": "cfmce:book_shelf_1", "y": 90  },
+		"books=1,facing=west":  { "model": "cfmce:book_shelf_1", "y": 270 },
+		"books=2,facing=north": { "model": "cfmce:book_shelf_2"           },
+		"books=2,facing=south": { "model": "cfmce:book_shelf_2", "y": 180 },
+		"books=2,facing=east":  { "model": "cfmce:book_shelf_2", "y": 90  },
+		"books=2,facing=west":  { "model": "cfmce:book_shelf_2", "y": 270 },
+		"books=3,facing=north": { "model": "cfmce:book_shelf_3"           },
+		"books=3,facing=south": { "model": "cfmce:book_shelf_3", "y": 180 },
+		"books=3,facing=east":  { "model": "cfmce:book_shelf_3", "y": 90  },
+		"books=3,facing=west":  { "model": "cfmce:book_shelf_3", "y": 270 },
+		"books=4,facing=north": { "model": "cfmce:book_shelf_4"           },
+		"books=4,facing=south": { "model": "cfmce:book_shelf_4", "y": 180 },
+		"books=4,facing=east":  { "model": "cfmce:book_shelf_4", "y": 90  },
+		"books=4,facing=west":  { "model": "cfmce:book_shelf_4", "y": 270 },
+		"books=5,facing=north": { "model": "cfmce:book_shelf_5"           },
+		"books=5,facing=south": { "model": "cfmce:book_shelf_5", "y": 180 },
+		"books=5,facing=east":  { "model": "cfmce:book_shelf_5", "y": 90  },
+		"books=5,facing=west":  { "model": "cfmce:book_shelf_5", "y": 270 }
 	}
 }

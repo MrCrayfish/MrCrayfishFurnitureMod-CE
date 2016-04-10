@@ -11,9 +11,12 @@ import com.mrcrayfish.furniturece.util.CollisionHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
@@ -23,6 +26,8 @@ import net.minecraft.world.World;
 
 public class BlockBookShelf extends BlockFurniture implements ITileEntityProvider
 {
+	public static final PropertyInteger BOOKS = PropertyInteger.create("books", 0, 5);
+	
 	public BlockBookShelf(Material materialIn) 
 	{
 		super(materialIn);
@@ -54,6 +59,17 @@ public class BlockBookShelf extends BlockFurniture implements ITileEntityProvide
 	}
 	
 	@Override
+	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) 
+	{
+		TileEntity tileEntity = worldIn.getTileEntity(pos);
+		if(tileEntity instanceof TileEntityBookShelf)
+		{
+			return state.withProperty(BOOKS, ((TileEntityBookShelf) tileEntity).getBookCount());
+		}
+		return state;
+	}
+	
+	@Override
 	public String getAuthorName() 
 	{
 		return "NEEP";
@@ -75,5 +91,11 @@ public class BlockBookShelf extends BlockFurniture implements ITileEntityProvide
 	public TileEntity createNewTileEntity(World worldIn, int meta) 
 	{
 		return new TileEntityBookShelf();
+	}
+	
+	@Override
+	protected BlockState createBlockState()
+	{
+		return new BlockState(this, FACING, BOOKS);
 	}
 }
