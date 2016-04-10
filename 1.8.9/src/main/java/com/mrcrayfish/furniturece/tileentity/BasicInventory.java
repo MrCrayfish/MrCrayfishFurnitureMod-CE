@@ -12,7 +12,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.IChatComponent;
 
-public class BasicInventory extends TileEntity implements IInventory
+public abstract class BasicInventory extends TileEntity implements IInventory
 {
 	private ItemStack[] inventory;
 	private String title = null;
