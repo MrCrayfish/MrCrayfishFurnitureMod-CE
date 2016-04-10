@@ -12,6 +12,7 @@ import com.mrcrayfish.furniturece.network.PacketHandler;
 import com.mrcrayfish.furniturece.proxy.IFurnitureProxy;
 import com.mrcrayfish.furniturece.tileentity.TileEntityAquarium;
 import com.mrcrayfish.furniturece.tileentity.TileEntityBlackBoard;
+import com.mrcrayfish.furniturece.tileentity.TileEntityBookShelf;
 import com.mrcrayfish.furniturece.tileentity.TileEntityBottle;
 import com.mrcrayfish.furniturece.tileentity.TileEntityCanvas;
 import com.mrcrayfish.furniturece.tileentity.TileEntityOfficeChair;
@@ -77,6 +78,7 @@ public class MrCrayfishFurnitureModCE
 		GameRegistry.registerTileEntity(TileEntityBottle.class, "cfmceBottle");
 		GameRegistry.registerTileEntity(TileEntityOfficeChair.class, "cfmceOfficeChair");
 		GameRegistry.registerTileEntity(TileEntityBlackBoard.class, "cfmceBlackBoard");
+		GameRegistry.registerTileEntity(TileEntityBookShelf.class, "cfmceBookShelf");
 		
 		/** Entity Registering */
 		EntityRegistry.registerModEntity(EntitySittableBlock.class, "cfmceSittableBlock", 0, this, 80, 1, false);

@@ -2,19 +2,26 @@ package com.mrcrayfish.furniturece.block;
 
 import java.util.List;
 
+import com.mrcrayfish.furniturece.MrCrayfishFurnitureModCE;
 import com.mrcrayfish.furniturece.Reference;
+import com.mrcrayfish.furniturece.gui.GuiBasicInventory;
+import com.mrcrayfish.furniturece.tileentity.TileEntityBookShelf;
 import com.mrcrayfish.furniturece.util.CollisionHelper;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockBookShelf extends BlockFurniture 
+public class BlockBookShelf extends BlockFurniture implements ITileEntityProvider
 {
 	public BlockBookShelf(Material materialIn) 
 	{
@@ -40,6 +47,13 @@ public class BlockBookShelf extends BlockFurniture
 	}
 	
 	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
+	{
+		playerIn.openGui(MrCrayfishFurnitureModCE.instance, GuiBasicInventory.ID, worldIn, pos.getX(), pos.getY(), pos.getZ());
+		return true;
+	}
+	
+	@Override
 	public String getAuthorName() 
 	{
 		return "NEEP";
@@ -55,5 +69,11 @@ public class BlockBookShelf extends BlockFurniture
 	public String getTheme() 
 	{
 		return Reference.THEME_OFFICE;
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World worldIn, int meta) 
+	{
+		return new TileEntityBookShelf();
 	}
 }
