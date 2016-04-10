@@ -3,18 +3,21 @@ package com.mrcrayfish.furniturece.block;
 import java.util.List;
 
 import com.mrcrayfish.furniturece.Reference;
+import com.mrcrayfish.furniturece.tileentity.TileEntityAirVent;
 import com.mrcrayfish.furniturece.util.CollisionHelper;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockAirVent extends BlockFurniture 
+public class BlockAirVent extends BlockFurniture implements ITileEntityProvider
 {
 	public BlockAirVent(Material materialIn) 
 	{
@@ -55,5 +58,11 @@ public class BlockAirVent extends BlockFurniture
 	public String getTheme() 
 	{
 		return Reference.THEME_OFFICE;
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World worldIn, int meta) 
+	{
+		return new TileEntityAirVent();
 	}
 }
