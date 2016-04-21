@@ -7,11 +7,13 @@ import com.mrcrayfish.furniturece.tileentity.TileEntityBlackBoard;
 import com.mrcrayfish.furniturece.tileentity.TileEntityBottle;
 import com.mrcrayfish.furniturece.tileentity.TileEntityCanvas;
 import com.mrcrayfish.furniturece.tileentity.TileEntityOfficeChair;
+import com.mrcrayfish.furniturece.tileentity.TileEntityWaterCooler;
 import com.mrcrayfish.furniturece.tileentity.render.AquariumRenderer;
 import com.mrcrayfish.furniturece.tileentity.render.BlackBoardRenderer;
 import com.mrcrayfish.furniturece.tileentity.render.BottleRenderer;
 import com.mrcrayfish.furniturece.tileentity.render.CanvasRenderer;
 import com.mrcrayfish.furniturece.tileentity.render.OfficeChairRenderer;
+import com.mrcrayfish.furniturece.tileentity.render.WaterCoolerRenderer;
 
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 
@@ -31,6 +33,7 @@ public class ClientProxy implements IFurnitureProxy
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBottle.class, new BottleRenderer());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityOfficeChair.class, new OfficeChairRenderer());
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityBlackBoard.class, new BlackBoardRenderer());
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityWaterCooler.class, new WaterCoolerRenderer());
 	}
 
 	@Override

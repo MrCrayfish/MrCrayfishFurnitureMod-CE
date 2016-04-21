@@ -15,7 +15,7 @@ import com.mrcrayfish.furniturece.block.BlockCeilingFan;
 import com.mrcrayfish.furniturece.block.BlockChimney;
 import com.mrcrayfish.furniturece.block.BlockCoffeeMachine;
 import com.mrcrayfish.furniturece.block.BlockCoffeeTable;
-import com.mrcrayfish.furniturece.block.BlockCooler;
+import com.mrcrayfish.furniturece.block.BlockWaterCooler;
 import com.mrcrayfish.furniturece.block.BlockCorkBoard;
 import com.mrcrayfish.furniturece.block.BlockGreenWheelieBin;
 import com.mrcrayfish.furniturece.block.BlockMicrophone;
@@ -68,7 +68,7 @@ public class FurnitureBlocks {
 		green_wheelie_bin = new BlockGreenWheelieBin(Material.wood).setUnlocalizedName("green_wheelie_bin");
 		coffee_table = new BlockCoffeeTable(Material.wood).setUnlocalizedName("coffee_table");
 		bottle = new BlockBottle(Material.glass).setUnlocalizedName("bottle");
-		cooler = new BlockCooler(Material.rock).setUnlocalizedName("cooler");
+		cooler = new BlockWaterCooler(Material.rock).setUnlocalizedName("cooler");
 		book_stack = new BlockBookStack(Material.cloth).setUnlocalizedName("book_stack");
 		ceiling_fan = new BlockCeilingFan(Material.wood).setUnlocalizedName("ceiling_fan");
 		bookshelf = new BlockBookShelf(Material.wood).setUnlocalizedName("book_shelf");

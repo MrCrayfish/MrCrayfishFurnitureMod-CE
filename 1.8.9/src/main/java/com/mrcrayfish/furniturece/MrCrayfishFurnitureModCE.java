@@ -17,6 +17,7 @@ import com.mrcrayfish.furniturece.tileentity.TileEntityBookShelf;
 import com.mrcrayfish.furniturece.tileentity.TileEntityBottle;
 import com.mrcrayfish.furniturece.tileentity.TileEntityCanvas;
 import com.mrcrayfish.furniturece.tileentity.TileEntityOfficeChair;
+import com.mrcrayfish.furniturece.tileentity.TileEntityWaterCooler;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -81,6 +82,7 @@ public class MrCrayfishFurnitureModCE
 		GameRegistry.registerTileEntity(TileEntityBlackBoard.class, "cfmceBlackBoard");
 		GameRegistry.registerTileEntity(TileEntityAirVent.class, "cfmceAirVent");
 		GameRegistry.registerTileEntity(TileEntityBookShelf.class, "cfmceBookShelf");
+		GameRegistry.registerTileEntity(TileEntityWaterCooler.class, "cfmceWaterCooler");
 		
 		/** Entity Registering */
 		EntityRegistry.registerModEntity(EntitySittableBlock.class, "cfmceSittableBlock", 0, this, 80, 1, false);
