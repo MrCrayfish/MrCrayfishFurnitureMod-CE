@@ -1,0 +1,27 @@
+itemGroup.tabFurnitureCE=MrCrayfish's Furniture Mod: CE
+
+tile.aquarium.name=Aquarium
+tile.canvas.name=Canvas
+tile.chimney.name=Chimney
+tile.spiral_stairs.name=Spiral Stairs
+tile.bear_rug.name=Bear Rug
+tile.black_board.name=Black Board
+tile.office_chair.name=Office Chair
+tile.green_wheelie_bin.name=Green Wheelie Bin
+tile.coffee_table.name=Coffee Table
+tile.bottle.name=Bottle
+
+item.item_info_pencil.name=Info Pencil
+
+achievement.cfmce_apprentice=Carpenter Apprentice
+achievement.cfmce_apprentice.desc=Craft 1 piece of furniture
+achievement.cfmce_king=Carpenter Master
+achievement.cfmce_king.desc=Craft 10 unique pieces of furniture in one session
+achievement.cfmce_easter_egg_1=Shame On You
+achievement.cfmce_easter_egg_1.desc=Easter Egg #1
+achievement.cfmce_easter_egg_2=Oops
+achievement.cfmce_easter_egg_2.desc=Easter Egg #2
+achievement.cfmce_easter_egg_3=Wrong Food
+achievement.cfmce_easter_egg_3.desc=Easter Egg #3
+achievement.cfmce_easter_egg_4=Great, Now It's Useless
+achievement.cfmce_easter_egg_4.desc=Easter Egg #4

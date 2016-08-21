@@ -1,0 +1,116 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+		"particle": "blocks/glass",
+        "0": "blocks/log_oak",
+        "1": "blocks/planks_oak",
+        "2": "blocks/glass"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 225, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 75, 255, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 45, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 225, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Leg#2",
+            "from": [ 1.0, 0.0, 13.0 ], 
+            "to": [ 3.0, 10.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "Leg#4",
+            "from": [ 13.0, 0.0, 13.0 ], 
+            "to": [ 15.0, 10.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 10.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "GlassCenter",
+            "from": [ 1.0, 8.0, 0.0 ], 
+            "to": [ 15.0, 9.0, 15.0 ], 
+            "faces": {
+                "up": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0.0, 8.0, 0.0 ], 
+            "to": [ 1.0, 9.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 1.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1.0, 8.0, 15.0 ], 
+            "to": [ 16.0, 9.0, 16.0 ], 
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 15.0, 1.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 15.0, 1.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 15.0, 1.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 15.0, 8.0, 0.0 ], 
+            "to": [ 16.0, 9.0, 15.0 ], 
+            "faces": {
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 15.0, 1.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 15.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 1.0, 15.0 ] }
+            }
+        }
+    ]
+}

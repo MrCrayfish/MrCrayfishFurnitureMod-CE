@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "east=false,north=false,south=false,west=false": { "model": "cfmce:coffee_table_none"             },
+        "east=false,north=true,south=false,west=false":  { "model": "cfmce:coffee_table_end"              },
+        "east=true,north=false,south=false,west=false":  { "model": "cfmce:coffee_table_end",    "y": 90  },
+        "east=false,north=false,south=true,west=false":  { "model": "cfmce:coffee_table_end",    "y": 180 },
+        "east=false,north=false,south=false,west=true":  { "model": "cfmce:coffee_table_end",    "y": 270 },
+        "east=true,north=true,south=false,west=false":   { "model": "cfmce:coffee_table_corner"           },
+        "east=false,north=true,south=true,west=false":   { "model": "cfmce:coffee_table_middle"           },
+        "east=false,north=true,south=false,west=true":   { "model": "cfmce:coffee_table_corner", "y": 270 },
+        "east=true,north=false,south=false,west=true":   { "model": "cfmce:coffee_table_middle", "y": 180 },
+        "east=true,north=false,south=true,west=false":   { "model": "cfmce:coffee_table_corner", "y": 90  },
+        "east=false,north=false,south=true,west=true":   { "model": "cfmce:coffee_table_corner", "y": 180 },
+        "east=true,north=true,south=true,west=true":     { "model": "cfmce:coffee_table_all"              },
+        "east=true,north=true,south=true,west=false":    { "model": "cfmce:coffee_table_edge", "y": 90    },
+        "east=true,north=true,south=false,west=true":    { "model": "cfmce:coffee_table_edge"             },
+        "east=false,north=true,south=true,west=true":    { "model": "cfmce:coffee_table_edge", "y": 270   },
+        "east=true,north=false,south=true,west=true":    { "model": "cfmce:coffee_table_edge" , "y": 180  }
+    }
+}

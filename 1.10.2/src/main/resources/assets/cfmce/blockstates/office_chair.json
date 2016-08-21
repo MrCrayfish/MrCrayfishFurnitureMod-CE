@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"facing=north,type=legs":  { "model": "cfmce:office_chair_base" },
+		"facing=south,type=legs":  { "model": "cfmce:office_chair_base" },
+		"facing=east,type=legs":   { "model": "cfmce:office_chair_base" },
+		"facing=west,type=legs":   { "model": "cfmce:office_chair_base" },
+		"facing=north,type=chair": { "model": "cfmce:office_chair_seat" },
+		"facing=south,type=chair": { "model": "cfmce:office_chair_seat" },
+		"facing=east,type=chair":  { "model": "cfmce:office_chair_seat" },
+		"facing=west,type=chair":  { "model": "cfmce:office_chair_seat" },
+		"facing=north,type=full":  { "model": "cfmce:office_chair"      },
+		"facing=south,type=full":  { "model": "cfmce:office_chair"      },
+		"facing=east,type=full":   { "model": "cfmce:office_chair"      },
+		"facing=west,type=full":   { "model": "cfmce:office_chair"      }
+	}
+}
