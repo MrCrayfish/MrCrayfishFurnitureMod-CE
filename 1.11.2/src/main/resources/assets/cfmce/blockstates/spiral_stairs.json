@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:spiral_stairs"           },
+		"facing=south": { "model": "cfmce:spiral_stairs", "y": 180 },
+		"facing=east":  { "model": "cfmce:spiral_stairs", "y": 90  },
+		"facing=west":  { "model": "cfmce:spiral_stairs", "y": 270 }
+	}
+}
