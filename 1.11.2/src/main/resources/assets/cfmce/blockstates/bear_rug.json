@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "cfmce:bear_rug"           },
+		"facing=south": { "model": "cfmce:bear_rug", "y": 180 },
+		"facing=east":  { "model": "cfmce:bear_rug", "y": 90  },
+		"facing=west":  { "model": "cfmce:bear_rug", "y": 270 }
+	}
+}
